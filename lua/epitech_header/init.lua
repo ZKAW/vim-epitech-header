@@ -44,10 +44,10 @@ File description:
 elseif file_type == 'haskell' then
     header = string.format([[
 {-
-** EPITECH PROJECT, %s
-** %s
-** File description:
-** %s
+-- EPITECH PROJECT, %s
+-- %s
+-- File description:
+-- %s
 -}
 ]], os.date("%Y"), project_name, file_description)
     else
