@@ -41,15 +41,6 @@ File description:
 # File description:
 # %s
 ]], os.date("%Y"), project_name, file_description)
-    elseif file_type == 'lua' then
-        header = string.format([[
---[[
-EPITECH PROJECT, %s
-%s
-File description:
-%s
---]]
-]], os.date("%Y"), project_name, file_description)
     else
         -- Default header (similar to C/C++ style)
         header = string.format([[
