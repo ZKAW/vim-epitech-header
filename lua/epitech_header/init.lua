@@ -66,13 +66,13 @@ File description:
     vim.api.nvim_buf_set_lines(0, 0, 0, false, vim.split(header, '\n'))
 end
 
+-- Register the function as a command
+vim.api.nvim_create_user_command('EpiHeader', function()
+    insert_epitech_header()
+end, {})
+
 -- Create a keymap for CTRL + Shift + H to insert the header
 vim.api.nvim_set_keymap('n', '<C-S-H>', ':lua require("epitech_header").insert_epitech_header()<CR>', { noremap = true, silent = true })
-
--- Create a command :EpiHeader to insert the header
-vim.api.nvim_create_user_command('EpiHeader', function()
-    require('epitech_header').insert_epitech_header()
-end, {})
 
 -- Return the module with the function
 return {
