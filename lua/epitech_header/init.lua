@@ -62,8 +62,8 @@ vim.api.nvim_create_user_command('EpiHeader', function()
     insert_epitech_header()
 end, {})
 
--- Create a keymap for CTRL + Shift + H to insert the header
-vim.api.nvim_set_keymap('n', '<C-S-H>', ':lua require("epitech_header").insert_epitech_header()<CR>', { noremap = true, silent = true })
+-- Create a keymap for the command
+vim.api.nvim_set_keymap('n', '<leader>eh', ':EpiHeader<CR>', { noremap = true, silent = true })
 
 -- Return the module with the function
 return {
