@@ -7,3 +7,5 @@ A Neovim plugin to insert Epitech headers into your files with a simple keybindi
 ### Using `lazy.nvim` or `plug`
 `ZKAW/vim-epitech-header`
 
+## Usage
+
