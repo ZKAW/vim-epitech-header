@@ -48,7 +48,7 @@ EPITECH PROJECT, %s
 %s
 File description:
 %s
-]]
+--]]
 ]], os.date("%Y"), project_name, file_description)
     else
         -- Default header (similar to C/C++ style)
