@@ -1,6 +1,3 @@
--- lua/epitech_header/init.lua
-
--- Function to insert Epitech header based on file type
 local function insert_epitech_header()
     -- Extract project name
     local buf_name = vim.api.nvim_buf_get_name(0)
