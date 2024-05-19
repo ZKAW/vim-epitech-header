@@ -63,14 +63,18 @@ elseif file_type == 'haskell' then
     vim.api.nvim_buf_set_lines(0, 0, 0, false, vim.split(header, '\n'))
 end
 
-local function setup()
+-- Setup function
+local function setup(config)
+    config = config or {}
+    local keymap = config.keymap or '<leader>eh'
+
     -- Register the function as a command
-    vim.api.nvim_create_user_command('EpiHeader', function()
+    vim.api.nvim_create_user_command('EpitechHeader', function()
         insert_epitech_header()
     end, {})
 
     -- Create a keymap for the command
-    vim.api.nvim_set_keymap('n', '<leader>eh', ':EpiHeader<CR>', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', keymap, ':EpitechHeader<CR>', { noremap = true, silent = true })
 end
 
 -- Return the module with the function
