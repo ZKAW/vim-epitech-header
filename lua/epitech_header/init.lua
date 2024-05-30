@@ -38,6 +38,14 @@ File description:
 -- %s
 -}
 ]],
+    makefile = [[
+##
+## EPITECH PROJECT, %s
+## %s
+## File description:
+## %s
+##
+]],
 }
 
 local function insert_epitech_header()
