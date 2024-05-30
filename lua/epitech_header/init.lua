@@ -38,7 +38,7 @@ File description:
 -- %s
 -}
 ]],
-    makefile = [[
+    make = [[
 ##
 ## EPITECH PROJECT, %s
 ## %s
